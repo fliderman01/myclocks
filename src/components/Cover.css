@@ -1,0 +1,11 @@
+/* cover buttons */
+.btn {
+  width: auto;
+  height: 1em;
+  background: green;
+  color: purple;
+}
+/* COVER */
+.Cover {
+  background: rgba(0, 179, 254, 0.5);
+}

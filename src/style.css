@@ -1,0 +1,43 @@
+body {
+  background-color: #0016ee;
+}
+main {
+  padding-top: 25%;
+}
+main > article {
+  width: auto;
+  min-height: 16em;
+  margin: 0.7em;
+  padding: 0.5em;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 1em;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 19px #fff, 0 0 32px #0fa,
+    0 0 64px #0fa, 0 0 72px #0fa, 0 0 102px #0fa, 0 0 111px #0fa;
+}
+/* BUTTONS */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button {
+  color: #fff;
+  margin: 0.5em 0.5em;
+  border-radius: 0.4em;
+  background: rgba(255, 18, 79, 0.5);
+  box-shadow: 0 0 4px rgb(224, 159, 18), 0 0 7px rgb(195, 26, 218),
+    0 0 11px #fff, 0 0 21px #0fa, 0 0 44px #0fa, 0 0 45px #0fa, 0 0 87px #0fa,
+    0 0 97px #0fa;
+}
+/* COVER */
+
+/* TIME */
+
+/* TEMP */
+
+/* STOPWATCH */
+
+/* COUNTDOWN */
+
+/* ALARM */
