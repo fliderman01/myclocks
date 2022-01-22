@@ -12,6 +12,7 @@ export default function Time() {
     }, 1000);
     return () => clearInterval(interval);
   });
+
   return (
     <article className="Time">
       <p className="clock">{time}</p>
