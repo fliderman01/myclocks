@@ -9,26 +9,18 @@ export default function Countdown() {
   const [hour, setHour] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const [isPaused, setIsPaused] = useState(true);
-  // SET HOURS, MINUTES, SECONDS
-  const changeHour = (e) => {
-    setHour(e.target.value);
-  };
-  const changeMin = (e) => {
-    setMin(e.target.value);
-  };
-  const changeSec = (e) => {
-    setSec(e.target.value);
-  };
-  // PAUSE, START & EDIT INPUT
+  // pause count
   const pause = () => {
     setIsActive(false);
     setIsPaused(true);
   };
+  // start count
   const start = () => {
     setIsActive(true);
     setIsPaused(false);
     setShowInp(false);
   };
+  // edit count values
   const edit = () => {
     setIsActive(false);
     setIsPaused(true);
@@ -44,9 +36,9 @@ export default function Countdown() {
         min == 0 && setHour(hour - 1);
         min == 0 && setMin(59);
         if (hour < 0) {
-          setSec(0);
-          setMin(0);
           setHour(0);
+          setMin(0);
+          setSec(0);
           setIsActive(false);
           setIsPaused(true);
         }
@@ -63,7 +55,7 @@ export default function Countdown() {
           <label>
             Hours
             <input
-              onChange={changeHour}
+              onChange={(e) => setHour(e.target.value)}
               type="number"
               min="0"
               id="hours"
@@ -73,7 +65,7 @@ export default function Countdown() {
           <label>
             Minutes
             <input
-              onChange={changeMin}
+              onChange={(e) => setMin(e.target.value)}
               type="number"
               max="59"
               min="0"
@@ -84,7 +76,7 @@ export default function Countdown() {
           <label>
             Seconds
             <input
-              onChange={changeSec}
+              onChange={(e) => setSec(e.target.value)}
               type="number"
               max="59"
               min="0"
