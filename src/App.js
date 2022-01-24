@@ -27,7 +27,15 @@ export default function App(props) {
   };
 
   const show = () => {
-    if (display == 'cover') return <Cover />;
+    if (display == 'cover')
+      return (
+        <Cover
+          displayTime={displayTime}
+          displayTemp={displayTemp}
+          displayStWatch={displayStWatch}
+          displayCDown={displayCDown}
+        />
+      );
     else if (display == 'time') return <Time />;
     else if (display == 'temp') return <Temp />;
     else if (display == 'stopwatch') return <Stopwatch />;
