@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Alarm from './components/Alarm';
 import Countdown from './components/Countdown';
 import Cover from './components/Cover';
 import Header from './components/Header';
@@ -26,10 +25,6 @@ export default function App(props) {
   const displayCDown = () => {
     setDisplay('countdown');
   };
-  // display Alarm
-  const displayAlarm = () => {
-    setDisplay('alarm');
-  };
 
   const show = () => {
     if (display == 'cover') return <Cover />;
@@ -37,7 +32,6 @@ export default function App(props) {
     else if (display == 'temp') return <Temp />;
     else if (display == 'stopwatch') return <Stopwatch />;
     else if (display == 'countdown') return <Countdown />;
-    else if (display == 'alarm') return <Alarm />;
   };
   return (
     <div>
@@ -47,7 +41,6 @@ export default function App(props) {
           displayTemp={displayTemp}
           displayStWatch={displayStWatch}
           displayCDown={displayCDown}
-          displayAlarm={displayAlarm}
         />
       </header>
       <main>{show()}</main>

@@ -10,7 +10,6 @@ export default function Header(props) {
         <button onClick={() => props.displayTemp()}>Temperature</button>
         <button onClick={() => props.displayStWatch()}>Stopwatch</button>
         <button onClick={() => props.displayCDown()}>Countdown</button>
-        <button onClick={() => props.displayAlarm()}>Alarm</button>
       </>
     </>
   );

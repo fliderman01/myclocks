@@ -4,6 +4,7 @@ import './Temp.css';
 
 export default function Temp() {
   const [displ, setDispl] = useState('');
+  const [clear, setClear] = useState('');
   const [cityN, setCityN] = useState(() => {
     const saved = localStorage.getItem('temp');
     return saved ? JSON.parse(saved) : `Tbilisi`;
@@ -31,6 +32,7 @@ export default function Temp() {
   // upload city name
   const uplCity = (e) => {
     e.charCode == 13 && setCityN(e.target.value);
+    e.charCode == 13 && setClear('');
   };
   return (
     <>
@@ -41,6 +43,8 @@ export default function Temp() {
             type="text"
             placeholder="Enter city name..."
             onKeyPress={uplCity}
+            value={clear}
+            onChange={(e) => setClear(e.target.value)}
           />
         </label>
       </article>
