@@ -23,6 +23,7 @@
   outline: none;
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
+  margin-bottom: 10%;
 }
 #temp:focus {
   background-color: #de004e;

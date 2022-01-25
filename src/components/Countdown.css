@@ -13,18 +13,33 @@
     0 0 92px rgb(0, 255, 242), 0 0 102px rgb(0, 255, 242),
     0 0 151px rgb(0, 255, 242);
 }
-#hours, #minutes, #seconds {
+#hours,
+#minutes,
+#seconds {
   height: 1.5em;
   width: 3em;
   border-radius: 0.4em;
   outline: none;
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
-  margin: 4.5em .4em;
+  margin: 4.5em 0;
 }
 
-#hours:focus, #minutes:focus, #seconds:focus {
+#hours:focus,
+#minutes:focus,
+#seconds:focus {
   background-color: #de004e;
   color: #1afe49;
 }
-
+@media screen and (max-width: 1196px) {
+  .numInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hours,
+  #minutes,
+  #seconds {
+    margin: 1em 1em;
+  }
+}

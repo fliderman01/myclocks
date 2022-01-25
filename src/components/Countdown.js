@@ -53,7 +53,7 @@ export default function Countdown() {
       {showInp ? (
         <div className="numInputs">
           <label>
-            Hours
+            Hours 
             <input
               onChange={(e) => setHour(e.target.value)}
               type="number"
