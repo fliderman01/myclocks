@@ -1,3 +1,30 @@
 .Temp {
   background: rgba(212, 255, 0, 0.74);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Temp > p {
+  font-family: 'Righteous', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  color: #ff6e27;
+  -webkit-text-stroke: 0.4px black;
+  text-shadow: 0 0 7px #ff6e27, 0 0 10px #ff6e27, 0 0 21px #ff6e27,
+    0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 255, 255),
+    0 0 92px rgb(255, 255, 255), 0 0 87px rgb(255, 255, 255),
+    0 0 111px rgb(255, 255, 255);
+}
+#temp {
+  height: 1.5em;
+  width: 15em;
+  border-radius: 0.4em;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+#temp:focus {
+  background-color: #de004e;
+  color: #1afe49;
 }

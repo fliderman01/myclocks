@@ -1,3 +1,21 @@
 .Time {
   background: rgba(0, 179, 254, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock {
+  font-family: 'Righteous', cursive;
+  font-size: 2.7em;
+  color: #defe47;
+  -webkit-text-stroke: .4px black;
+  text-shadow:
+  0 0 7px #defe47,
+  0 0 10px #defe47,
+  0 0 21px #defe47,
+  0 0 42px rgb(0, 255, 242),
+  0 0 82px rgb(0, 255, 242),
+  0 0 92px rgb(0, 255, 242),
+  0 0 102px rgb(0, 255, 242),
+  0 0 151px rgb(0, 255, 242);
 }

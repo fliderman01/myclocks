@@ -87,7 +87,7 @@ export default function Countdown() {
         </div>
       ) : (
         <div className="clock">
-          <p>
+          <p id="CDownNum">
             {hour < 10 ? '0' + hour : hour}:{min < 10 ? '0' + min : min}:
             {sec < 10 ? '0' + sec : sec}
           </p>

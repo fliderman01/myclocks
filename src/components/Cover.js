@@ -6,16 +6,16 @@ export default function Cover(props) {
   return (
     <article className="Cover">
       <h1>Choose between:</h1>
-      <button className="btn" onClick={() => props.displayTime()}>
+      <button className="btn hov" onClick={() => props.displayTime()}>
         Time
       </button>
-      <button className="btn" onClick={() => props.displayTemp()}>
+      <button className="btn hov" onClick={() => props.displayTemp()}>
         Temperature
       </button>
-      <button className="btn" onClick={() => props.displayStWatch()}>
+      <button className="btn hov" onClick={() => props.displayStWatch()}>
         Stopwatch
       </button>
-      <button className="btn" onClick={() => props.displayCDown()}>
+      <button className="btn hov" onClick={() => props.displayCDown()}>
         Countdown
       </button>
     </article>

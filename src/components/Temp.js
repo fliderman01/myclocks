@@ -45,6 +45,7 @@ export default function Temp() {
             onKeyPress={uplCity}
             value={clear}
             onChange={(e) => setClear(e.target.value)}
+            id="temp"
           />
         </label>
       </article>

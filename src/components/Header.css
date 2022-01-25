@@ -1,0 +1,9 @@
+header > button {
+  border-bottom-left-radius: 1em solid;
+  border: none;
+}
+/* cover + header buttons */
+.hov:hover {
+  background-color: #1afe49;
+  cursor: pointer;
+}

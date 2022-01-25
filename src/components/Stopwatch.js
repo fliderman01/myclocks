@@ -42,35 +42,33 @@ export default function Stopwatch() {
   });
 
   return (
-    <>
-      <article className="StWatch">
-        <div className="clock">
-          <p>
-            {hour < 10 ? '0' + hour : hour}:{min < 10 ? '0' + min : min}:
-            {sec < 10 ? '0' + sec : sec}
-          </p>
-        </div>
-        <div className="StWatchBtns">
-          <button onClick={resetT}>
-            <img
-              src="https://www.freeiconspng.com/uploads/restart-icon-9.png"
-              width="44px"
-            />
-          </button>
-          <button onClick={start}>
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/start-1438842-1214529.png"
-              width="44px"
-            />
-          </button>
-          <button onClick={pause}>
-            <img
-              src="https://www.freeiconspng.com/uploads/pause-icon-13.png"
-              width="44px"
-            />
-          </button>
-        </div>
-      </article>
-    </>
+    <article className="StWatch">
+      <div className="clock">
+        <p>
+          {hour < 10 ? '0' + hour : hour}:{min < 10 ? '0' + min : min}:
+          {sec < 10 ? '0' + sec : sec}
+        </p>
+      </div>
+      <div className="StWatchBtns">
+        <button onClick={resetT}>
+          <img
+            src="https://www.freeiconspng.com/uploads/restart-icon-9.png"
+            width="44px"
+          />
+        </button>
+        <button onClick={start}>
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/start-1438842-1214529.png"
+            width="44px"
+          />
+        </button>
+        <button onClick={pause}>
+          <img
+            src="https://www.freeiconspng.com/uploads/pause-icon-13.png"
+            width="44px"
+          />
+        </button>
+      </div>
+    </article>
   );
 }
