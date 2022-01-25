@@ -33,3 +33,8 @@ button {
     0 0 11px #fff, 0 0 21px #0fa, 0 0 44px #0fa, 0 0 45px #0fa, 0 0 87px #0fa,
     0 0 97px #0fa;
 }
+@media screen and (min-width: 420px) {
+  main {
+    padding: 5% 35%;
+  }
+}

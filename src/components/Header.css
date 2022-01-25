@@ -1,9 +1,15 @@
 header > button {
   border-bottom-left-radius: 1em solid;
-  border: none;
 }
 /* cover + header buttons */
+.hov {
+  border: none;
+
+  height: 2em;
+  padding: 0 1em;
+}
 .hov:hover {
   background-color: #1afe49;
   cursor: pointer;
+  color: purple;
 }
